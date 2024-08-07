@@ -8,10 +8,10 @@ const TransactionHero = () => {
       <div className="2xl:container md:px-[20px] mx-auto px-[15px]">
         <div className="">
           <div className="mb-5 flex flex-col gap-0">
-            <h1 className="text-white sm:text-[32px] text-[40px] font-semibold roboto mb-1 ">
+            <h1 className="text-white md:text-start text-center sm:text-[32px] text-[40px] font-semibold roboto mb-1 ">
               Transactions
             </h1>
-            <p className="text-[16px] text-[#A5A5AB] font-normal mb-5">
+            <p className="text-[16px] md:text-start text-center text-[#A5A5AB] font-normal mb-5">
               Excluded Uncles as a result oF “Chain Reorganizations”
             </p>
           </div>

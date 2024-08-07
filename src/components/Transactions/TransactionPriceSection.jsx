@@ -63,7 +63,7 @@ const TransactionPriceSection = () => {
             <div className="">
               <div className="flex-grow">
                 <a
-                  class="text-[#FFF] text-[20px] font-medium hover:text-[#066a9c]"
+                  class="text-[#FFF] text-[20px] font-medium"
                   href="#"
                   rel="tooltip"
                   data-bs-toggle="tooltip"
@@ -87,21 +87,21 @@ const TransactionPriceSection = () => {
             <div className="">
               <div className="flex-grow">
                 <a
-                  class="text-[#FFF] text-[20px] font-medium hover:text-[#066a9c]"
+                  class="text-[#FFF] text-[20px] font-medium"
                   href="#"
                   rel="tooltip"
                   data-bs-toggle="tooltip"
                   data-bs-placement="bottom"
                 >
-                  1,073,935
+                  $2.58 USD
                   <span class="text-[#46DB78]  text-[14px] font-normal">
                     {" "}
-                    (05.69%)
+                    (70.88%)
                   </span>
                 </a>
               </div>
-              <span class="text-[#A5A5AB] font-normal text-[14px]">
-                TRANSACTIONS (24H)
+              <span class="text-[#A5A5AB] font-normal text-[13px]">
+                AVG. TRANSACTION FEE (24H)
               </span>
             </div>
           </div>
