@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Table from "./TransactionTable";
 import { Pagination } from "./Pagination";
+import method from "../assets1/method.svg"
+import eyeIcon from "../assets1/eye-icon.svg"
+// import documentIcon from "../assets1/document-icon.svg"
+import noteIcon from "../assets1/note-icon.svg"
 
 const tableHeading = [
   {
@@ -12,42 +16,37 @@ const tableHeading = [
     id: 2,
     name: "Method",
     color: "white",
-    img: "/assets/tabler-icon-info-circle.svg",
+    img: method,
   },
   {
     id: 3,
-    name: "Nonce",
+    name: "Block",
     color: "white",
   },
   {
     id: 4,
-    name: "Last Seen",
-    color: "white",
+    name: "Age",
+    color: "#46DB78",
   },
   {
     id: 5,
-    name: "Gas Limit",
-    color: "#46DB78",
-  },
-  {
-    id: 6,
-    name: "Gas Price",
-    color: "#46DB78",
-    img: "/assets/tabler-icon-info-circle.svg",
-  },
-  {
-    id: 7,
     name: "From",
     color: "white",
   },
   {
-    id: 8,
+    id: 6,
     name: "To",
     color: "white",
+    img:method
   },
   {
-    id: 9,
+    id: 7,
     name: "Amount",
+    color: "#46DB78",
+  },
+  {
+    id: 8,
+    name: "Txn Fee",
     color: "#46DB78",
   },
 ];
@@ -56,268 +55,33 @@ export const TransactionAll = () => {
   const [data, setData] = useState([
     {
       col1: {
+        img: eyeIcon,
         value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
+        img1: "/assets/document-icon",
         color: "#46DB78",
       },
       col2: "Transfer",
-      col3: "8",
+      col3: {
+        color: "#46DB78",
+        value: "20402437",
+      },
       col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
+      col5: {
+        value: "0x9Dd44195...DFa2Ddd15",
+        color: "#46DB78",
+        img: "/assets/document-icon",
+      },
+      col6: {
+        img: noteIcon,
+        value: "Lido: Execution Layer Rew..",
+        img1: "/assets/document-icon",
         color: "#46DB78",
       },
+      col7: "0.012603628 Algo",
 
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
+      col8: "0.00003207",
     },
-    {
-      col1: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col2: "Transfer",
-      col3: "8",
-      col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
 
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
-    },
-    {
-      col1: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col2: "Transfer",
-      col3: "8",
-      col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
-    },
-    {
-      col1: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col2: "Transfer",
-      col3: "8",
-      col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
-    },
-    {
-      col1: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col2: "Transfer",
-      col3: "8",
-      col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
-    },
-    {
-      col1: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col2: "Transfer",
-      col3: "8",
-      col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
-    },
-    {
-      col1: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col2: "Transfer",
-      col3: "8",
-      col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
-    },
-    {
-      col1: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col2: "Transfer",
-      col3: "8",
-      col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
-    },
-    {
-      col1: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col2: "Transfer",
-      col3: "8",
-      col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
-    },
-    {
-      col1: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col2: "Transfer",
-      col3: "8",
-      col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
-    },
-    {
-      col1: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col2: "Transfer",
-      col3: "8",
-      col4: "2 secs ago",
-      col5: "21000",
-      col6: "0.02 Gwei",
-      col7: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-
-      col8: {
-        value: "0x5ca348623be...",
-        img: "/assets/tabler-icon-files.svg",
-        color: "#46DB78",
-      },
-      col9: "0.00038325 Algo",
-    },
     // Add more rows as needed
   ]);
   return (

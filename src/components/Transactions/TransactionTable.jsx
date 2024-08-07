@@ -44,7 +44,7 @@ const TransactionTable = ({ tableHeading, data }) => {
                 style={{ color: header.color }}
                 onClick={() => requestSort(`col${index + 1}`)}
               >
-                <div className="flex items-center">
+                <div className="flex items-center justify-between">
                   {header.name}
                   {header.img ? (
                     <img src={header.img} alt="" className="ml-1" />
@@ -70,49 +70,34 @@ const TransactionTable = ({ tableHeading, data }) => {
         <tbody>
           {sortedData.map((row, index) => (
             <tr key={index} className="hover:bg-[#262626]">
-              <td className="py-5 px-4 border-none text-white text-sm flex items-center gap-1">
-                <span style={{ color: row.col1.color }}>{row.col1.value}</span>
+              <td className="py-5 px-4 border-none text-white text-sm flex items-end gap-1">
                 <img src={row.col1.img} alt="" className="cursor-pointer" />
+                <span style={{ color: row.col1.color }}>{row.col1.value}</span>
+                <img src={row.col1.img1} alt="" className="cursor-pointer" />
               </td>
               <td className="py-5 px-4 border-none text-white text-sm">
                 {row.col2}
               </td>
               <td className="py-5 px-4 border-none text-[#46DB78] text-sm">
-                {row.col3}
+                {row.col3.value}
               </td>
               <td className="py-5 px-4 border-none text-white text-sm">
                 {row.col4}
               </td>
-              <td className="py-5 px-4 border-none text-[#46DB78] text-sm">
-                {row.col5}
+              <td className="py-5 px-4 border-none flex items-center gap-1 text-[#46DB78] text-sm">
+                {row.col5.value}
+                <img src={row.col5.img} alt="" />
               </td>
-              <td className="py-5 px-4 border-none text-white text-sm">
-                {row.col6}
+              <td className="py-5 px-4 border-none text-sm flex items-center gap-1">
+                <img src={row.col6.img} alt="" />
+                <p className={`${row.col6.color}`}> {row.col6.value}</p>
+                <img src={row.col6.img1} alt="" />
               </td>
-              <td className="py-5 px-4 border-none text-white text-sm flex items-center gap-1">
-                <span style={{ color: row.col7.color }}>{row.col7.value}</span>
-                <img src={row.col7.img} alt="" className="cursor-pointer" />
-                <img
-                  src="/assets/tabler-icon-filter.svg"
-                  alt=""
-                  className="cursor-pointer"
-                />
+              <td className="py-5 px-4 border-none text-white text-sm ">
+                <span>{row.col7}</span>
               </td>
-              <td className="py-5 px-4 border-none">
-                <div className="  text-white text-sm flex items-center gap-1">
-                  <span style={{ color: row.col8.color }}>
-                    {row.col8.value}
-                  </span>
-                  <img src={row.col8.img} alt="" className="cursor-pointer" />
-                  <img
-                    src="/assets/tabler-icon-filter.svg"
-                    alt=""
-                    className="cursor-pointer"
-                  />
-                </div>
-              </td>
-              <td className="py-5 px-4 border-none text-white text-sm">
-                {row.col9}
+              <td className="py-5 px-4 border-none text-white">
+                <span >{row.col8}</span>
               </td>
             </tr>
           ))}
