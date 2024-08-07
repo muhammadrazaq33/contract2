@@ -98,7 +98,7 @@ const latestTransaction = [
 ];
 export const TransacstionsSection = () => {
   return (
-    <div className="bg-[#000]">
+    <div className="bg-[#000] mt-16">
       <div className="grid grid-cols-12 gap-4  lg: ">
         {/* left side */}
         <div className="lg:col-span-6 col-span-12 mb-4 bg-[#000]">
