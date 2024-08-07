@@ -123,7 +123,7 @@ export const TransacstionsSection = () => {
               </a>
             </div>
             {/*end of title */}
-            <div className="p-[1rem]" style={{ flex: "1 1 auto" }}>
+            <div className="p-[0.8rem]" style={{ flex: "1 1 auto" }}>
               {/* 0 block */}
               {latestBlocks.map((block, index) => {
                 return (
@@ -237,7 +237,7 @@ export const TransacstionsSection = () => {
             </div>
             {/* end of title */}
 
-            <div className="p-[1rem]" style={{ flex: "1 1 auto" }}>
+            <div className="p-[0.8rem]" style={{ flex: "1 1 auto" }}>
               {/* 0 block */}
               {latestTransaction.map((transaction, index) => {
                 return (
@@ -271,7 +271,7 @@ export const TransacstionsSection = () => {
                         </div>
                       </div>
                       <div className="sm:col-span-8 col-span-12">
-                        <div className="y-4 flex justify-between items-start sm:items-center   relative">
+                        <div className="y-4 flex justify-between items-start sm:items-center relative">
                           <div className="pe-0 sm:pe-2">
                             <div className="flex flex-wrap gap-1 roboto text-[12px] text-[#D2D2D5]">
                               From
