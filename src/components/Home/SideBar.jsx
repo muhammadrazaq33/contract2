@@ -15,7 +15,7 @@ const SideBar = ({
   setShowMenu,
 }) => {
   return (
-    <div className="fixed top-0 z-0 h-full w-[80%] right-0 bg-[black] transition-all">
+    <div className="fixed top-0 z-10 h-full w-[80%] right-0 bg-[black] transition-all">
       <div className="flex justify-between items-center gap-2 mt-10 p-6">
         <img src={logo} className="sm:w-[190px] w-[160px]" alt="" />
         <img

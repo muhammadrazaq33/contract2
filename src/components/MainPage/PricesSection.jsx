@@ -8,7 +8,7 @@ export const PricesSection = () => {
   return (
     <div className=" ">
       <div
-        className="card py-10  mb-4 mt-[-3rem] rounded-[0.75rem] bg-[#23262F]"
+        className="card py-10  mb-4 mt-[-3rem] rounded-[0.75rem] bg-[#121212]"
         style={{ boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)" }}
       >
         <div className="grid grid-cols-12 gap-4 md:gap-0">

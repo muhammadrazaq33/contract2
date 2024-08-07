@@ -150,143 +150,149 @@ export const Header = () => {
   };
 
   return (
-    <div className="bg-[#121212]">
+    <div className="">
       {/* navbar */}
-      <div className="md:flex hidden justify-between items-center py-4 bg-[#121212]">
-        {/* left side */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2">
-            <p className="text-[14px] text-[#757575] font-normal">
-              Algo Price :{" "}
-            </p>
-            <p className="text-white">$41,1925</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <img className="text-[#5BC88B]" src={arrow} alt="" />
-            <p className="text-[#5BC88B] text-[14px] font-normal">+1.63% </p>
-          </div>
-          <div className="flex items-center gap-2">
-            <img src={uparrow} alt="" />
-            <p className="text-[#FF7C74] text-[14px] font-normal">+1.63% </p>
-          </div>
-        </div>
-        {/*end of left side */}
-        {/* right side */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 bg-[#3a3131] rounded-[18px]">
-            <div className="p-2 bg-[#FF0F0F] rounded-[18px]">
-              <img
-                src={moon}
-                alt=""
-                className="h-[16px]  w-[16px]  text-white flex-shrink-0"
-              />
+      <div className="bg-[#121212]">
+        <div className="md:flex hidden justify-between items-center py-4 2xl:container md:px-[20px] mx-auto px-[15px]">
+          {/* left side */}
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
+              <p className="text-[14px] text-[#757575] font-normal">
+                Algo Price :{" "}
+              </p>
+              <p className="text-white">$41,1925</p>
             </div>
-            <div className="p-2">
-              <img
-                className="h-[16px] w-[16px] flex-shrink-0"
-                src={brightness}
-                alt=""
-              />
+            <div className="flex items-center gap-2">
+              <img className="text-[#5BC88B]" src={arrow} alt="" />
+              <p className="text-[#5BC88B] text-[14px] font-normal">+1.63% </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <img src={uparrow} alt="" />
+              <p className="text-[#FF7C74] text-[14px] font-normal">+1.63% </p>
             </div>
           </div>
-          <div className="bg-[#46DB78] p-2 rounded-[18px]">
-            <img
-              src="/assets/algorand-algo-icon.svg"
-              className=" h-[16px] text-[2rem] w-[16px] flex-shrink-0"
-              alt=""
-            />
+          {/*end of left side */}
+          {/* right side */}
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 bg-[#3a3131] rounded-[18px]">
+              <div className="p-2 bg-[#FF0F0F] rounded-[18px]">
+                <img
+                  src={moon}
+                  alt=""
+                  className="h-[16px]  w-[16px]  text-white flex-shrink-0"
+                />
+              </div>
+              <div className="p-2">
+                <img
+                  className="h-[16px] w-[16px] flex-shrink-0"
+                  src={brightness}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="bg-[#46DB78] p-2 rounded-[18px]">
+              <img
+                src="/assets/algorand-algo-icon.svg"
+                className=" h-[16px] text-[2rem] w-[16px] flex-shrink-0"
+                alt=""
+              />
+            </div>
           </div>
+          {/*end of right side */}
         </div>
-        {/*end of right side */}
       </div>
-      <div className="flex 
-       border-b border-[#e9ecef] justify-between items-center sm:gap-5 gap-3 py-5 flex-wrap bg-[#121212]">
-        <div className="flex flex-col gap-2">
-          <img src={logo} className="sm:w-[190px] w-[160px]" alt="" />
-        </div>
-        <div className="md:flex hidden gap-3 items-center">
-          <a href="/home" className="text-[white] text-[14px] font-normal">
-            Home
-          </a>
-          <Dropdown
-            label="Blockchain"
-            items={dropdownItems.buy}
-            isOpen={openDropdown === "buy"}
-            toggleDropdown={() => toggleDropdown("buy")}
-          />
-          <Dropdown
-            label="Tokens"
-            items={dropdownItems.exchange}
-            isOpen={openDropdown === "exchange"}
-            toggleDropdown={() => toggleDropdown("exchange")}
-          />
-          <Dropdown
-            label="Play"
-            items={dropdownItems.play}
-            isOpen={openDropdown === "play"}
-            toggleDropdown={() => toggleDropdown("play")}
-          />
-          <Dropdown
-            label="NFTs"
-            items={dropdownItems.gaming}
-            isOpen={openDropdown === "gaming"}
-            toggleDropdown={() => toggleDropdown("gaming")}
-          />
-          <Dropdown
-            label="Resources"
-            items={dropdownItems.gaming}
-            isOpen={openDropdown === "Resources"}
-            toggleDropdown={() => toggleDropdown("Resources")}
-          />
-          <a href="#" className="text-[#ADADAD] text-[14px] font-normal">
-            About Us
-          </a>
-          <a href="#" className="text-[#ADADAD] text-[14px] font-normal">
-            Shop
-          </a>
-          <button className="flex items-center bg-[#FF0F0F] py-[10px] px-[16px] rounded-[4px] gap-[6px] text-white">
-            <img src={loginIcon} alt="" />
-            <p>Log In</p>
-          </button>
-        </div>
-        {/* right side for mobile */}
-        <div className="md:hidden flex gap-4">
-          <div className="flex items-center gap-2 bg-[#3a3131] rounded-[18px]">
-            <div className="p-1.5 bg-[#FF0F0F] rounded-[18px]">
+      <div className="bg-[#000000]">
+        <div
+          className="flex 2xl:container md:px-[20px] mx-auto px-[15px]
+       justify-between items-center sm:gap-5 gap-3 py-5 flex-wrap"
+        >
+          <div className="flex flex-col gap-2">
+            <img src={logo} className="sm:w-[190px] w-[160px]" alt="" />
+          </div>
+          <div className="md:flex hidden gap-3 items-center">
+            <a href="/home" className="text-[white] text-[14px] font-normal">
+              Home
+            </a>
+            <Dropdown
+              label="Blockchain"
+              items={dropdownItems.buy}
+              isOpen={openDropdown === "buy"}
+              toggleDropdown={() => toggleDropdown("buy")}
+            />
+            <Dropdown
+              label="Tokens"
+              items={dropdownItems.exchange}
+              isOpen={openDropdown === "exchange"}
+              toggleDropdown={() => toggleDropdown("exchange")}
+            />
+            <Dropdown
+              label="Play"
+              items={dropdownItems.play}
+              isOpen={openDropdown === "play"}
+              toggleDropdown={() => toggleDropdown("play")}
+            />
+            <Dropdown
+              label="NFTs"
+              items={dropdownItems.gaming}
+              isOpen={openDropdown === "gaming"}
+              toggleDropdown={() => toggleDropdown("gaming")}
+            />
+            <Dropdown
+              label="Resources"
+              items={dropdownItems.gaming}
+              isOpen={openDropdown === "Resources"}
+              toggleDropdown={() => toggleDropdown("Resources")}
+            />
+            <a href="#" className="text-[#ADADAD] text-[14px] font-normal">
+              About Us
+            </a>
+            <a href="#" className="text-[#ADADAD] text-[14px] font-normal">
+              Shop
+            </a>
+            <button className="flex items-center bg-[#FF0F0F] py-[10px] px-[16px] rounded-[4px] gap-[6px] text-white">
+              <img src={loginIcon} alt="" />
+              <p>Log In</p>
+            </button>
+          </div>
+          {/* right side for mobile */}
+          <div className="md:hidden flex gap-4">
+            <div className="flex items-center gap-2 bg-[#3a3131] rounded-[18px]">
+              <div className="p-1.5 bg-[#FF0F0F] rounded-[18px]">
+                <img
+                  src={moon}
+                  alt=""
+                  className="h-[16px]  w-[16px]  text-white flex-shrink-0"
+                />
+              </div>
+              <div className="p-1.5">
+                <img
+                  className="h-[16px] w-[16px] flex-shrink-0"
+                  src={brightness}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="" onClick={() => setShowMenu(true)}>
               <img
-                src={moon}
+                className="w-[28px] h-[28px] flex-shrink-0 "
+                src={menu}
                 alt=""
-                className="h-[16px]  w-[16px]  text-white flex-shrink-0"
               />
             </div>
-            <div className="p-1.5">
-              <img
-                className="h-[16px] w-[16px] flex-shrink-0"
-                src={brightness}
-                alt=""
+            {/* side bar */}
+            {showMenu && (
+              <SideBar
+                showMenu={showMenu}
+                setShowMenu={setShowMenu}
+                dropdownItems={dropdownItems}
+                openDropdown={openDropdown}
+                toggleDropdown={toggleDropdown}
               />
-            </div>
+            )}
+            {/*end of side bar */}
           </div>
-          <div className="" onClick={() => setShowMenu(true)}>
-            <img
-              className="w-[28px] h-[28px] flex-shrink-0 "
-              src={menu}
-              alt=""
-            />
-          </div>
-          {/* side bar */}
-          {showMenu && (
-            <SideBar
-              showMenu={showMenu}
-              setShowMenu={setShowMenu}
-              dropdownItems={dropdownItems}
-              openDropdown={openDropdown}
-              toggleDropdown={toggleDropdown}
-            />
-          )}
-          {/*end of side bar */}
+          {/*end of right side for mobile */}
         </div>
-        {/*end of right side for mobile */}
       </div>
       {/* end of navbar */}
     </div>

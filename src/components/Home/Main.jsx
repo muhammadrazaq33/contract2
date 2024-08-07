@@ -11,17 +11,17 @@ export const Main = () => {
   return (
     <>
       <div className=" bg-[#121212] 2xl:container md:px-[20px] mx-auto px-[15px]  ">
-        <div className="">
+        {/* <div className=""> */}
+        {/* </div> */}
           <Header />
-        </div>
       </div>
-      <Explorer />
-      <Dropdown/>
+      {/* <Explorer /> */}
+      {/* <Dropdown/> */}
       <div className="pb-20 2xl:container md:px-[20px] mx-auto px-[15px]">
         {/* <ContentSection /> */}
         {/* <TabsSection /> */}
-        <PricesSection />
-        <TransacstionsSection/>
+        {/* <PricesSection /> */}
+        {/* <TransacstionsSection/> */}
       </div>
     </>
   );
