@@ -184,7 +184,7 @@ const Footer1 = () => {
       {/* last */}
       <div className="py-4 border-t border-[#e9ecef]">
         <div className="flex items-center justify-center flex-wrap gap-3">
-          <p className="text-[#FDFFFC] text-center text-[16px] font-light">
+          <p className="text-[#FDFFFC] text-center text-[16px] font-medium">
             © Fry Networks LLC. All Rights Reserved
           </p>
         </div>

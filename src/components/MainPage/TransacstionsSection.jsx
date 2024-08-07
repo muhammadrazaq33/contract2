@@ -97,7 +97,7 @@ const latestTransaction = [
 export const TransacstionsSection = () => {
   return (
     <div className="bg-[#000] mt-16">
-      <div className="grid grid-cols-12 gap-4  lg: ">
+      <div className="grid grid-cols-12 gap-4">
         {/* left side */}
         <div className="lg:col-span-6 col-span-12 mb-4 bg-[#000]">
           <div className="h-full flex flex-col bg-[#101010] rounded-[0.75rem] border-[#262626]">
