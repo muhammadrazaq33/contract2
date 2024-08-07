@@ -50,7 +50,7 @@ const Footer1 = () => {
               <p className="text-[18px] text-white font-semibold">
                 Join The <span className="text-[#FF0F0F]">Evolution</span>
               </p>
-              <form action="" className="mb-3 mt-1 -ml-4">
+              <form action="" className="mb-3 mt-1 -ml-2.5">
                 <div className="rounded mb-5 gap-0 flex items-center justify-center w-[19rem] max-w-[30rem]">
                   <div className="">
                     <input
