@@ -11,7 +11,7 @@ const Dropdown = ({ label, items, isOpen, toggleDropdown,showMenu }) => {
       </div>
       {isOpen && (
         <div
-          className={`min-w-[18rem] z-[99] bg-white mt-3 text-[.78515625rem] p-4 rounded-[0.5rem] absolute left-0`}
+          className={`sm:min-w-[18rem] min-w-[16rem] z-[99] bg-white mt-3 text-[.78515625rem] p-4 rounded-[0.5rem] absolute left-0`}
           style={{ boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)" }}
         >
           <div className="text-end text-[10.05px] text-[#6c757d] mt-n2 mb-1">
