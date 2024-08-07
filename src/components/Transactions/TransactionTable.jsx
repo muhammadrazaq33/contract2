@@ -1,6 +1,18 @@
-import React from 'react';
+import React from 'react'
 
-export const Transaction = () => {
+const Transactions = [
+  {
+    id: 1,
+    transactionHash:
+      "0xcb23c4809cb0300880610944974b46ea78d952694590c516818e6cea01ae6f1a",
+    method: "Transfer",
+    block: 20402437,
+    age: 4,
+    from: "0xED0d9992...554A10D4D",
+    to: "0xED0d9992...554A10D4D",
+  },
+];
+const TransactionTable = () => {
   return (
     <div>
       <div
@@ -8,7 +20,6 @@ export const Transaction = () => {
         style={{ boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)" }}
       >
         {/* transaction top */}
-        {/*end of transaction top */}
         <div className="card-body p-[1rem]">
           <div className="flex  flex-wrap justify-between items-center gap-3">
             <p className="mb-0 flex gap-1 items-center text-[14.4992px] font-normal">
@@ -255,22 +266,9 @@ export const Transaction = () => {
         </div>
         {/*end of transaction table  */}
       </div>
-        {/*end of transaction table  */}
-      <div className="mt-3 flex items-center gap-1">
-        <img src="/assets/idea.png" alt="" />
-        <span
-          className="text-[12.5625px] "
-          style={{ color: "rgb(108, 117, 125)" }}
-        >
-          A contract address hosts a smart contract, which is a set of code
-          stored on the blockchain that runs when predetermined conditions are
-          met. Learn more about addresses in our{" "}
-          <a href="#" className="text-[#0784c3]">
-            Knowledge Base
-          </a>
-          .
-        </span>
-      </div>
+      {/*end of transaction table  */}
     </div>
   );
-};
+}
+
+export default TransactionTable

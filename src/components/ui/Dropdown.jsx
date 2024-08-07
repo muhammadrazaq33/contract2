@@ -1,17 +1,17 @@
 import React from 'react';
 
-const Dropdown = ({ label, items, isOpen, toggleDropdown }) => {
+const Dropdown = ({ label, items, isOpen, toggleDropdown,showMenu }) => {
   return (
     <div className="dropdown relative">
       <div
         onClick={toggleDropdown}
-        className="flex gap-[.25rem] cursor-pointer items-center py-[.25rem] text-[0.78515625rem] rounded-[0.375rem] transition-all text-[#ADADAD] hover:bg-[#0670a6]"
+        className="flex gap-[.25rem] cursor-pointer items-center py-[.25rem] text-[0.78515625rem] rounded-[0.375rem] transition-all text-[#ADADAD]"
       >
         {label} <img src="/assets/down-arrow.png" alt="" />
       </div>
       {isOpen && (
         <div
-          className="min-w-[18rem] z-[99] right-0 bg-white absolute mt-3 text-[.78515625rem] p-4 rounded-[0.5rem]"
+          className={`min-w-[18rem] z-[99] bg-white mt-3 text-[.78515625rem] p-4 rounded-[0.5rem] absolute left-0`}
           style={{ boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)" }}
         >
           <div className="text-end text-[10.05px] text-[#6c757d] mt-n2 mb-1">

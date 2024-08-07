@@ -45,3 +45,19 @@
   grid-template-columns: 2fr 2fr 1fr;
   /* justify-content: space-between; */
 }
+.active{
+  animation:fadeIn 0.3s;
+  /* opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.1 ease-in-out; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 1 ease-in;
+}
+.inactive{
+ position: absolute;
+  top: 0;
+  right: -100%;
+}

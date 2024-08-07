@@ -9,7 +9,7 @@ const Dropdown = ({ label, items, isOpen, toggleDropdown }) => {
         className="flex gap-[.25rem] cursor-pointer items-center px-[.3rem] py-[.25rem] text-[0.78515625rem] rounded-[0.375rem] transition-all  "
       >
         <p className="text-[#ADADAD] ">{label}</p>
-        <RiArrowDropDownLine className="text-xl" />
+        <RiArrowDropDownLine className="text-xl text-[#ADADAD]" />
       </div>
       {isOpen && (
         <div

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Dropdown from '../ui/Dropdown';
+import React, { useEffect, useRef,useState } from 'react';
+import Dropdown1 from '../Details/Dropdown1';
 import arrow from "../assets1/arrow.svg"
 import uparrow from "../assets1/uparrow.svg"
 import moon from "../assets1/moon.svg"
@@ -143,6 +143,20 @@ const dropdownItems = {
 export const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef();
+  
+    useEffect(() => {
+      const handle = (e) => {
+        if (!menuRef.current.contains(e.target)) {
+          setShowMenu(false);
+        }
+      };
+
+      document.addEventListener("click", handle);
+      return () => {
+        document.removeEventListener("click",handle)
+      }
+    }); 
 
 
   const toggleDropdown = (index) => {
@@ -190,10 +204,10 @@ export const Header = () => {
                 />
               </div>
             </div>
-            <div className="bg-[#46DB78] p-2 rounded-[18px]">
+            <div className="bg-[#46DB78] p-[2px] rounded-[18px]">
               <img
                 src="/assets/algorand-algo-icon.svg"
-                className=" h-[16px] text-[2rem] w-[16px] flex-shrink-0"
+                className=" h-[27px] text-[2rem] w-[27px] flex-shrink-0"
                 alt=""
               />
             </div>
@@ -213,31 +227,31 @@ export const Header = () => {
             <a href="/home" className="text-[white] text-[14px] font-normal">
               Home
             </a>
-            <Dropdown
+            <Dropdown1
               label="Blockchain"
               items={dropdownItems.buy}
               isOpen={openDropdown === "buy"}
               toggleDropdown={() => toggleDropdown("buy")}
             />
-            <Dropdown
+            <Dropdown1
               label="Tokens"
               items={dropdownItems.exchange}
               isOpen={openDropdown === "exchange"}
               toggleDropdown={() => toggleDropdown("exchange")}
             />
-            <Dropdown
+            <Dropdown1
               label="Play"
               items={dropdownItems.play}
               isOpen={openDropdown === "play"}
               toggleDropdown={() => toggleDropdown("play")}
             />
-            <Dropdown
+            <Dropdown1
               label="NFTs"
               items={dropdownItems.gaming}
               isOpen={openDropdown === "gaming"}
               toggleDropdown={() => toggleDropdown("gaming")}
             />
-            <Dropdown
+            <Dropdown1
               label="Resources"
               items={dropdownItems.gaming}
               isOpen={openDropdown === "Resources"}
@@ -255,7 +269,7 @@ export const Header = () => {
             </button>
           </div>
           {/* right side for mobile */}
-          <div className="md:hidden flex gap-4">
+          <div ref={menuRef} className="md:hidden flex gap-4">
             <div className="flex items-center gap-2 bg-[#3a3131] rounded-[18px]">
               <div className="p-1.5 bg-[#FF0F0F] rounded-[18px]">
                 <img
@@ -272,7 +286,7 @@ export const Header = () => {
                 />
               </div>
             </div>
-            <div className="" onClick={() => setShowMenu(true)}>
+            <div ref={menuRef} className="" onClick={() => setShowMenu(true)}>
               <img
                 className="w-[28px] h-[28px] flex-shrink-0 "
                 src={menu}
@@ -282,6 +296,7 @@ export const Header = () => {
             {/* side bar */}
             {showMenu && (
               <SideBar
+                menuRef={menuRef}
                 showMenu={showMenu}
                 setShowMenu={setShowMenu}
                 dropdownItems={dropdownItems}

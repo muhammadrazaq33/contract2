@@ -14,8 +14,11 @@ const SideBar = ({
   showMenu,
   setShowMenu,
 }) => {
+
   return (
-    <div className="fixed top-0 z-10 h-full w-[80%] right-0 bg-[black] transition-all">
+    <div
+      className={`${openDropdown ? "min-h-[170vh]" : "min-h-[100vh]"}   absolute right-0 top-0  z-10 w-[80%]  bg-[black] transition-all `}
+    >
       <div className="flex justify-between items-center gap-2 mt-10 p-6">
         <img src={logo} className="sm:w-[190px] w-[160px]" alt="" />
         <img
@@ -28,12 +31,13 @@ const SideBar = ({
       {/* links */}
       <div className="flex flex-col gap-6 items-start p-6">
         <div className="bg-[#328332] p-1.5 rounded-[18px] ">
-         <img src={navIcon} className='m-0 p-0 w-[25px] h-[25px] ' alt="" />
+          <img src={navIcon} className="m-0 p-0 w-[25px] h-[25px] " alt="" />
         </div>
         <a href="/home" className="text-[white] text-[14px] font-normal">
           Home
         </a>
         <Dropdown
+          showMenu={showMenu}
           label="Blockchain"
           items={dropdownItems.buy}
           isOpen={openDropdown === "buy"}

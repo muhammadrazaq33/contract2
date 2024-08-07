@@ -131,7 +131,7 @@ export const TransacstionsSection = () => {
                 return (
                   <>
                     <div
-                      key={index}
+                      key={block.id}
                       className={`grid grid-cols-12 rounded-[6px] p-4 ${
                         block.id % 2 !== 0 ? "bg-[]" : "bg-[#1B1B1B]"
                       }`}
@@ -247,7 +247,7 @@ export const TransacstionsSection = () => {
                 return (
                   <>
                     <div
-                      key={index}
+                      key={transaction.id}
                       className={`grid grid-cols-12 rounded-[6px] p-4  ${
                         transaction.id % 2 !== 0 ? "bg-[]" : "bg-[#1B1B1B]"
                       }`}
