@@ -1,14 +1,13 @@
-import React from 'react';
-import customIcon from "../assets1/customIcon.svg"
-import customIcon1 from "../assets1/customIcon1.svg"
-import box from "../assets1/box.svg"
-import document from "../assets1/document.svg"
-import navIcon from "../assets1/nav-green-icon.svg"
-
+import React from "react";
+import customIcon from "../assets1/customIcon.svg";
+import customIcon1 from "../assets1/customIcon1.svg";
+import box from "../assets1/box.svg";
+import document from "../assets1/document.svg";
+import navIcon from "../assets1/nav-green-icon.svg";
 
 const latestBlocks = [
   {
-    id:1,
+    id: 1,
     tokens: 23453674,
     beforeTime: 4,
     dummyValue: "Oxlf9090aa...8e676c326",
@@ -17,7 +16,7 @@ const latestBlocks = [
     algo: 0.0127,
   },
   {
-    id:2,
+    id: 2,
     tokens: 23453674,
     beforeTime: 4,
     dummyValue: "Oxlf9090aa...8e676c326",
@@ -26,7 +25,7 @@ const latestBlocks = [
     algo: 0.0127,
   },
   {
-    id:3,
+    id: 3,
     tokens: 23453674,
     beforeTime: 4,
     dummyValue: "Oxlf9090aa...8e676c326",
@@ -35,7 +34,7 @@ const latestBlocks = [
     algo: 0.0127,
   },
   {
-    id:4,
+    id: 4,
     tokens: 23453674,
     beforeTime: 4,
     dummyValue: "Oxlf9090aa...8e676c326",
@@ -44,7 +43,7 @@ const latestBlocks = [
     algo: 0.0127,
   },
   {
-    id:5,
+    id: 5,
     tokens: 23453674,
     beforeTime: 4,
     dummyValue: "Oxlf9090aa...8e676c326",
@@ -55,7 +54,7 @@ const latestBlocks = [
 ];
 const latestTransaction = [
   {
-    id:1,
+    id: 1,
     dummyCode: "Oxeabfcb0114b... ",
     beforeTime: 4,
     fromDummyValue: "oxl f9090aa...8e676c326",
@@ -63,7 +62,7 @@ const latestTransaction = [
     algo: 0.0127,
   },
   {
-    id:2,
+    id: 2,
     dummyCode: "Oxeabfcb0114b... ",
     beforeTime: 4,
     fromDummyValue: "oxl f9090aa...8e676c326",
@@ -71,7 +70,7 @@ const latestTransaction = [
     algo: 0.0127,
   },
   {
-    id:3,
+    id: 3,
     dummyCode: "Oxeabfcb0114b... ",
     beforeTime: 4,
     fromDummyValue: "oxl f9090aa...8e676c326",
@@ -79,7 +78,7 @@ const latestTransaction = [
     algo: 0.0127,
   },
   {
-    id:4,
+    id: 4,
     dummyCode: "Oxeabfcb0114b... ",
     beforeTime: 4,
     fromDummyValue: "oxl f9090aa...8e676c326",
@@ -87,14 +86,13 @@ const latestTransaction = [
     algo: 0.0127,
   },
   {
-    id:5,
+    id: 5,
     dummyCode: "Oxeabfcb0114b... ",
     beforeTime: 4,
     fromDummyValue: "oxl f9090aa...8e676c326",
     toDummyValue: " OxD6E4aA93...da06F9cEf",
     algo: 0.0127,
   },
-
 ];
 export const TransacstionsSection = () => {
   return (
@@ -132,20 +130,20 @@ export const TransacstionsSection = () => {
                   <>
                     <div
                       key={block.id}
-                      className={`grid grid-cols-12 rounded-[6px] p-4 ${
+                      className={`grid grid-cols-12 md:gap-y-0 gap-y-4 rounded-[6px] p-4 ${
                         block.id % 2 !== 0 ? "bg-[]" : "bg-[#1B1B1B]"
                       }`}
                     >
                       <div className="sm:col-span-4 col-span-12">
                         <div className="flex items-center gap-2">
-                          <div className="hidden sm:flex p-2 rounded-[0.5rem] bg-[#252525] h-[3rem] w-[3rem] text-[#6c757d]">
+                          <div className="hidden md:flex p-2 rounded-[0.5rem] bg-[#252525] h-[3rem] w-[3rem] text-[#6c757d]">
                             <img
                               src={box}
                               className="max-w-[48px] h-auto w-full"
                               alt=""
                             />
                           </div>
-                          <div className="hidden  md:flex flex-col items-center sm:items-start gap-1 sm:gap-0">
+                          <div className="flex flex-col items-center sm:items-start gap-1 sm:gap-0">
                             <a
                               href=""
                               className="truncate text-[#46DB78] text-[12px] roboto"
@@ -159,7 +157,7 @@ export const TransacstionsSection = () => {
                         </div>
                       </div>
                       <div className="sm:col-span-8 col-span-12">
-                        <div className="flex sm:justify-between items-end sm:items-center   relative">
+                        <div className="flex justify-between items-start sm:items-center   relative">
                           <div className="pe-0 sm:pe-2">
                             <div className="flex flex-wrap gap-1 roboto text-[12px] text-[#D2D2D5]">
                               Fee Recipient
@@ -180,7 +178,7 @@ export const TransacstionsSection = () => {
                               in 12 secs
                             </span>
                           </div>
-                          <div className="hidden border items-center border-[#323B49] rounded-[0.375rem] sm:flex gap-1 py-1 px-1 text-end ms-2 sm:ms-0">
+                          <div className="border items-center border-[#323B49] rounded-[0.375rem] flex gap-1 py-1 px-1 text-end ms-2 sm:ms-0">
                             <span
                               className="badge text-white font-normal roboto 
                        text-[10.8744px]"
@@ -217,9 +215,7 @@ export const TransacstionsSection = () => {
         {/* end of left side */}
         {/* right side */}
         <div className="lg:col-span-6 col-span-12 mb-4 bg-[#000]">
-          <div
-            className="h-full flex flex-col border-[#262626] bg-[#101010]  rounded-[0.75rem]"
-          >
+          <div className="h-full flex flex-col border-[#262626] bg-[#101010]  rounded-[0.75rem]">
             {/* title */}
             <div
               className="p-[1rem] border-b bg-[#262626] flex justify-between items-center"
@@ -248,20 +244,20 @@ export const TransacstionsSection = () => {
                   <>
                     <div
                       key={transaction.id}
-                      className={`grid grid-cols-12 rounded-[6px] p-4  ${
+                      className={`grid grid-cols-12 md:gap-y-0 gap-y-4 rounded-[6px] p-4  ${
                         transaction.id % 2 !== 0 ? "bg-[]" : "bg-[#1B1B1B]"
                       }`}
                     >
                       <div className="sm:col-span-4 col-span-12">
                         <div className="flex items-center gap-2">
-                          <div className="hidden sm:flex p-2 rounded-[0.5rem] bg-[#252525] h-[3rem] w-[3rem] text-[#6c757d]">
+                          <div className="hidden md:flex p-2 rounded-[0.5rem] bg-[#252525] h-[3rem] w-[3rem] text-[#6c757d]">
                             <img
                               src={document}
                               className="max-w-[48px] h-auto w-full"
                               alt=""
                             />
                           </div>
-                          <div className="hidden  md:flex flex-col items-center sm:items-start gap-1 sm:gap-0">
+                          <div className="flex flex-col items-start gap-1 sm:gap-0">
                             <a
                               href=""
                               className="truncate text-[#46DB78] text-[12px] roboto"
@@ -275,7 +271,9 @@ export const TransacstionsSection = () => {
                         </div>
                       </div>
                       <div className="sm:col-span-8 col-span-12">
-                        <div className="flex sm:justify-between items-end sm:items-center   relative">
+                        <div
+                          className="y-4 flex justify-between items-start sm:items-center   relative"
+                        >
                           <div className="pe-0 sm:pe-2">
                             <div className="flex flex-wrap gap-1 roboto text-[12px] text-[#D2D2D5]">
                               From
@@ -296,7 +294,7 @@ export const TransacstionsSection = () => {
                               {transaction.toDummyValue}
                             </a>
                           </div>
-                          <div className="hidden border items-center border-[#323B49] rounded-[0.375rem] sm:flex gap-1 py-1 px-1 text-end ms-2 sm:ms-0">
+                          <div className="border items-center border-[#323B49] rounded-[0.375rem] flex gap-1 py-1 px-1 text-end ms-2 sm:ms-0">
                             <span
                               className="badge text-white font-normal roboto 
                        text-[10.8744px]"
