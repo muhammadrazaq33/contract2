@@ -51,7 +51,7 @@ const Footer1 = () => {
                 Join The <span className="text-[#FF0F0F]">Evolution</span>
               </p>
               <form action="" className="mb-3 mt-1 -ml-4">
-                <div className="rounded p-1.5 gap-0 flex items-center justify-center w-[19rem] max-w-[30rem]">
+                <div className="rounded mb-5 gap-0 flex items-center justify-center w-[19rem] max-w-[30rem]">
                   <div className="">
                     <input
                       type="text"
@@ -67,9 +67,9 @@ const Footer1 = () => {
                   <div className="">
                     <button
                       type="button"
-                      className="text-white bg-[#FF0F0F]  focus:ring-4 focus:ring-blue-300 font-medium rounded-tr-lg rounded-br-lg text-sm px-5 py-4   dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                      className="text-white bg-[#FF0F0F]  focus:ring-4 focus:ring-blue-300 font-medium rounded-tr-lg rounded-br-lg text-sm px-5 py-3 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                     >
-                      <img src="/assets/search.png" alt="" />
+                      <img src="/assets/search.png" className='w-[23px] h-[23px]' alt="" />
                     </button>
                   </div>
                 </div>
