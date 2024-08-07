@@ -213,3 +213,24 @@ pre {
 .headerBg{
   background: linear-gradient(270deg, rgba(109, 5, 5, 0.40) 0%, rgba(211, 10, 10, 0.40) 100%);
 }
+
+/* Add this CSS to your global styles or relevant CSS file */
+
+.sidebar-enter {
+  transform: translateX(100%);
+}
+
+.sidebar-enter-active {
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
+}
+
+.sidebar-exit {
+  transform: translateX(0);
+}
+
+.sidebar-exit-active {
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+}
+

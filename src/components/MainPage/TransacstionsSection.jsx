@@ -178,7 +178,7 @@ export const TransacstionsSection = () => {
                               in 12 secs
                             </span>
                           </div>
-                          <div className="border items-center border-[#323B49] rounded-[0.375rem] flex gap-1 py-1 px-1 text-end ms-2 sm:ms-0">
+                          <div className="border items-center border-[#323B49] rounded-[0.375rem] flex  gap-1 py-1 px-1 text-end ms-2 sm:ms-0 flex-shrink-0">
                             <span
                               className="badge text-white font-normal roboto 
                        text-[10.8744px]"
@@ -271,9 +271,7 @@ export const TransacstionsSection = () => {
                         </div>
                       </div>
                       <div className="sm:col-span-8 col-span-12">
-                        <div
-                          className="y-4 flex justify-between items-start sm:items-center   relative"
-                        >
+                        <div className="y-4 flex justify-between items-start sm:items-center   relative">
                           <div className="pe-0 sm:pe-2">
                             <div className="flex flex-wrap gap-1 roboto text-[12px] text-[#D2D2D5]">
                               From
@@ -294,7 +292,7 @@ export const TransacstionsSection = () => {
                               {transaction.toDummyValue}
                             </a>
                           </div>
-                          <div className="border items-center border-[#323B49] rounded-[0.375rem] flex gap-1 py-1 px-1 text-end ms-2 sm:ms-0">
+                          <div className="border items-center border-[#323B49] rounded-[0.375rem] flex gap-1 py-1 px-1 text-end ms-2 sm:ms-0 flex-shrink-0">
                             <span
                               className="badge text-white font-normal roboto 
                        text-[10.8744px]"

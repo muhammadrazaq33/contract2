@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 import logo from "../assets1/logo.png";
 import crossMenu from "../assets1/crossmenu.svg";
 import Dropdown from "../ui/Dropdown";
 import loginIcon from "../assets1/login-icon.svg";
 import navIcon from "../../../public/assets/algorand-algo-icon.svg";
-
-
 
 const SideBar = ({
   toggleDropdown,
@@ -14,10 +12,11 @@ const SideBar = ({
   showMenu,
   setShowMenu,
 }) => {
-
   return (
     <div
-      className={`${openDropdown ? "min-h-[170vh]" : "min-h-[100vh]"}   absolute right-0 top-0  z-10 w-[80%]  bg-[black] transition-all `}
+      className={`${
+        openDropdown ? "min-h-[170vh]" : "min-h-[100vh]"
+      }   absolute right-0 top-0  z-10 w-[80%]  bg-[black] transition-all `}
     >
       <div className="flex justify-between items-center gap-2 mt-10 p-6">
         <img src={logo} className="sm:w-[190px] w-[160px]" alt="" />
@@ -82,4 +81,4 @@ const SideBar = ({
   );
 };
 
-export default SideBar
+export default SideBar;

@@ -1,14 +1,13 @@
-import React, { useEffect, useRef,useState } from 'react';
-import Dropdown1 from '../Details/Dropdown1';
-import arrow from "../assets1/arrow.svg"
-import uparrow from "../assets1/uparrow.svg"
-import moon from "../assets1/moon.svg"
+import React, { useEffect, useRef, useState } from "react";
+import Dropdown1 from "../Details/Dropdown1";
+import arrow from "../assets1/arrow.svg";
+import uparrow from "../assets1/uparrow.svg";
+import moon from "../assets1/moon.svg";
 import brightness from "../assets1/brightness.svg";
 import logo from "../assets1/logo.png";
 import loginIcon from "../assets1/login-icon.svg";
 import menu from "../assets1/menu.svg";
-import SideBar from './SideBar';
-
+import SideBar from "./SideBar";
 
 const dropdownItems = {
   buy: [
@@ -144,20 +143,19 @@ export const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef();
-  
-    useEffect(() => {
-      const handle = (e) => {
-        if (!menuRef.current.contains(e.target)) {
-          setShowMenu(false);
-        }
-      };
 
-      document.addEventListener("click", handle);
-      return () => {
-        document.removeEventListener("click",handle)
+  useEffect(() => {
+    const handle = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setShowMenu(false);
       }
-    }); 
+    };
 
+    document.addEventListener("click", handle);
+    return () => {
+      document.removeEventListener("click", handle);
+    };
+  });
 
   const toggleDropdown = (index) => {
     setOpenDropdown(openDropdown === index ? null : index);
