@@ -71,7 +71,7 @@ export const PricesSection = () => {
               </div>
             </div>
           </div>
-          <div className="md:col-span-6 lg:col-span-4 md:px-[2.5rem] col-span-12 px-[15px] md:border-l border-[#e9ecef]">
+          <div className="md:col-span-6 lg:col-span-4 md:px-[2.5rem] col-span-12 px-[15px] md:border-l border-[#23262F]">
             <div className="flex items-start">
               <div className="text-center me-3 p-[4px] bg-[#328332] rounded-[18px]">
                 <img
@@ -149,7 +149,7 @@ export const PricesSection = () => {
               </div>
             </div>
           </div>
-          <div className="md:col-span-6 lg:col-span-4 md:px-[2.5rem] col-span-12 px-[15px] md:border-l border-[#e9ecef]">
+          <div className="md:col-span-6 lg:col-span-4 md:px-[2.5rem] col-span-12 px-[15px] md:border-l border-[#23262F]">
             <div class="text-[#A5A5AB] text-[14] mb-[1px]">
               TRANSACTION HISTORY IN 14 DAYS
             </div>
